@@ -1,3 +1,5 @@
+// L E V E L   1   E X E R C I S E S
+
 // 1. declare a variable named challenge and assign it to an intial value '30 days of js'
 let challenge = '30 Days Of JavaScript';
 
@@ -94,3 +96,10 @@ console.log(fullString)
 
 // 25. Use repeat() method to print 30 Days Of JavaScript 2 times
 console.log(challenge.repeat(2))
+
+// L E V E L   2   E X E R C I S E S
+
+
+
+
+// L E V E L   3   E X E R C I S E S

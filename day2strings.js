@@ -136,6 +136,54 @@ let sentence2 = 'I hope this course is not full of jargon';
 console.log(sentence2.includes('jargon')); // true
 
 // 7. Generate a random number between 0 and 100 inclusively.
+let randomNum = Math.random(); // generates random number btwn 0 - 0.999999
+console.log(randomNum) // 0.7778450...
+
+let numBtwnZeroAndHundred = randomNum * 101; // multiple by your top number + 1
+console.log(numBtwnZeroAndHundred); // 72.7602834590
+// round to nearest whole number
+let roundRandomNum = Math.floor(numBtwnZeroAndHundred);
+console.log(roundRandomNum) // 73
+
+// 8. Generate a random number between 50 and 100 inclusively.
+//Math.floor(Math.random() * (max - min + 1)) + min;
+let max = 100;
+let min = 50;
+let randomNum3 = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(randomNum3) // 61
+
+// 9. Generate a random number between 0 and 255 inclusively.
+let numBtwnZeroAndTwoFiftyFive = randomNum * 256;
+console.log(numBtwnZeroAndTwoFiftyFive); // 165.643535
+// round to nearest whole number
+let roundNum2 = Math.floor(numBtwnZeroAndTwoFiftyFive);
+console.log(roundNum2) // 166
+
+// 10. Access the 'JavaScript' string characters using a random number.
+let word = 'JavaScript';
+
+/* charAt selects the character at a specific index. This specific index
+was a random index. The random index was created by Math.random() * the 
+length of the original string */
+let stringCharacter = word.charAt(Math.random() * word.length);
+console.log(stringCharacter) // r
+
+/* 11. Use console.log() and escape characters to print the following pattern. 
+1 1 1 1 1
+2 1 2 4 8
+3 1 3 9 27
+4 1 4 16 64
+5 1 5 25 125
+\n after the number means "new line"
+*/
+console.log('1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125')
+
+/* 12. Use substr to slice out the phrase because because because 
+from the following sentence:'You cannot end a sentence with because because because is a conjunction'*/
+let string = "You cannot end a sentence with because because because it ends in something";
+let newString = string.replace(/because/g, "")
+console.log(newString);
+
 
 
 

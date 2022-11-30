@@ -97,7 +97,45 @@ console.log(fullString)
 // 25. Use repeat() method to print 30 Days Of JavaScript 2 times
 console.log(challenge.repeat(2))
 
+
+
 // L E V E L   2   E X E R C I S E S
+
+/* 1. Using console.log() print out the following statement:
+The quote 'There is no exercise better for the heart than 
+reaching down and lifting people up.' by John Holmes teaches us to 
+help one another. */
+console.log("The quote 'There is no exercise better for the heart than reaching down and lifting people up' by John Holmes.")
+
+/* 2. Using console.log() print out the following quote by Mother Teresa: blah blah blah */
+console.log("'Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.'");
+
+// 3. Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+let num = '10'; 
+console.log(typeof num); // string
+console.log(Number(num)); // 10
+
+// 4. Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+let num2 = '9.8';
+let num2Float = parseFloat(num2);
+console.log(num2Float); // 9.8
+
+let num2Int = parseInt(num2);
+console.log(num2Int); // 9
+console.log(Math.ceil(num2Float)); // 10 yay!
+
+// 5. Check if 'on' is found in both python and jargon
+let language1 = 'python';
+let language2 = 'jargon';
+
+console.log(language1.includes('on'), language2.includes('on'));
+// true true
+
+// 6. I hope this course is not full of jargon. Check if jargon is in the sentence.
+let sentence2 = 'I hope this course is not full of jargon';
+console.log(sentence2.includes('jargon')); // true
+
+// 7. Generate a random number between 0 and 100 inclusively.
 
 
 

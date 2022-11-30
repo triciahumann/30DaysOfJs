@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!-- INLINE JAVASCRIPT -->
+
+<html>
+    <head>
+        <title>30DaysofScript:Inline Script</title>
+    </head>
+    <body>
+        <button onclick="alert('Welcome to 30DaysOfJavaScript!')">Click Me</button>
+    </body>
+</html>
+
+
+<!-- INTERNAL SCRIPT : prefers to be in the body, not head -->
+
+<html>
+    <head>
+        <title>30DaysOfJavaScript: Internal Script</title>
+    </head>
+    <body>
+        <button onclick="alert('Welcome to 30DaysOfJavaScript')">Click Me</button>
+        <script>
+            console.log('Welcome to 30 Days of JavaScript')
+        </script>
+        <script src="./introduction.js"></script>
+        <!-- <script src="./variable.js"></script> -->
+        <script src="./datatype.js"></script>
+    </body>
+</html>
+
+EXTERNAL SCRIPT : could also be placed in <head> but recommended in the <body>
+<html>
+    <head>
+        <title>30DaysOfJavaScript:Exeternal Script</title>
+    </head>
+    <body>
+        <button>click now bitch</button>
+        
+        <script src="./introduction.js"></script>
+    </body>
+</html>
+
